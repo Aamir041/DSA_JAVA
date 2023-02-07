@@ -1,4 +1,4 @@
-// problem link : https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/
+// problem link : https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/ōōōōō
 public class countEvenNumberOfDigits {
     public static void main(String[] args) {
         int[] nums = {12,345,2,6,7896};
@@ -11,7 +11,7 @@ public class countEvenNumberOfDigits {
     static int evenNumDigits(int[] nums){
         
         //! My solution
-        /* 
+        /* ōōō
          int count=0;
          for(int num : array){
              int tempNum = num;

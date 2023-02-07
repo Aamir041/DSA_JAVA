@@ -1,4 +1,4 @@
-package Methods;
+// package Methods;
 public class shadowingProp {
     static int x = 90; // global varible x is declared and intialized
     public static void main(String[] args) {
