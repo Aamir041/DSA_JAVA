@@ -1,6 +1,15 @@
+// Ascending Binary Search
 
+public class asceBinarySearch{
 
-public class basicBinarySearch{
+	public static void main(String[] args) {
+
+		int[] arr = {-18,-12,-4,0,2,3,4,15,16,18,22,45,89};
+		int target = 11;
+		System.out.println(binarySearch(arr,target));
+	}
+
+	
 	static int binarySearch(int[] arr, int target){
 		
 		int start = 0;
@@ -24,10 +33,4 @@ public class basicBinarySearch{
 		return -1;
 	}
 
-	public static void main(String[] args) {
-
-		int[] arr = {-18,-12,-4,0,2,3,4,15,16,18,22,45,89};
-		int target = 11;
-		System.out.println(binarySearch(arr,target));
-	}
 }
