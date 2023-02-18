@@ -1,3 +1,5 @@
+// link : https://leetcode.com/problems/length-of-last-word/description/
+
 public class LenOfLastWord {
     public static void main(String[] args) {
         System.out.println(lengthOfLastWord("Hello World"));
