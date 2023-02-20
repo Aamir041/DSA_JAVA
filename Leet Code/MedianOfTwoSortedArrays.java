@@ -45,8 +45,8 @@ public class MedianOfTwoSortedArrays{
         double median = 0;
         if(mergedLength % 2 == 0){
             int z = mergedLength/2;
-            // foe
-            median = (mergedSortArr[z] + mergedSortArr[z-1])/2.0;
+            // for precision divide with 2.0
+            median = (mergedSortArr[z] + mergedSortArr[z-1])/2.0; // for precision divide with 2.0
         }
         else{
             int z = (mergedLength - 1)/2;
