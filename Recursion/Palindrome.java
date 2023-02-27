@@ -1,17 +1,18 @@
 public class Palindrome {
     public static void main(String[] args) {
-        String str = "anona";
-        System.out.println(CheckPalindrome(str,0,str.length()-1,true));
+        String str = "anohana";
+        System.out.println(CheckPalindrome(str,0,true));
     }
 
-    static boolean CheckPalindrome(String str,int i,int j,boolean result){
-        if(i>j || !result){
+    static boolean CheckPalindrome(String str,int i,boolean result){
+        int n = str.length();
+        if(i>=n/2 || !result){
             return result;
         }
-        if(str.charAt(i) != str.charAt(j)){
+        if(str.charAt(i) != str.charAt(n-i-1)){
             result = false;
         }
-        return CheckPalindrome(str,i+1,j-1,result);
+        return CheckPalindrome(str,i+1,result);
     }
 
 }
