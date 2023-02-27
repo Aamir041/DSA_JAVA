@@ -1,6 +1,9 @@
+import java.util.Scanner;
+
 public class Palindrome {
     public static void main(String[] args) {
-        String str = "anohana";
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
         System.out.println(CheckPalindrome(str,0,true));
     }
 
