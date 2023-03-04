@@ -1,8 +1,6 @@
 // link : https://leetcode.com/contest/weekly-contest-334/problems/find-the-divisibility-array-of-a-string/
-
 // TLE :(
 
-import java.math.BigInteger;
 import java.util.Arrays;
 
 public class DivisbilityOfArrayString{
@@ -16,26 +14,18 @@ public class DivisbilityOfArrayString{
         
         int n = word.length();
         int[] nums = new int[n];
-
-        BigInteger M = new BigInteger(""+m); 
-        
+        long num = 0;
         for(int i=0; i<n; i++){
-            BigInteger d = new BigInteger(word.substring(0,i+1));
-            BigInteger[] BigArray = d.divideAndRemainder(M);
-            String r = ""+ BigArray[1];
-            int remainder = Integer.valueOf(r);
-            if(remainder == 0){
+            num = num*10 + (word.charAt(i)-'0');
+            if(num%m==0){
                 nums[i] = 1;
             }
             else{
                 nums[i] = 0;
-            }
-            
+            }   
         }
-        
-        return nums;
-        
-        
+
+        return nums;        
     }
 
 }
