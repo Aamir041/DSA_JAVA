@@ -34,7 +34,7 @@ class StackEx {
 
 	void display() {
 		if(!isEmpty()){
-			for (int i = 0; i <= top; i++) {
+			for (int i = top; i>= 0; i--) {
 				System.out.print(numbers[i] + " ");
 			}
 			System.out.println();
